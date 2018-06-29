@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <h2>Roles</h2>
+    </div>
+
+    <div class="col-md-12">
+        <div class="from-group">
+            <label for="name" class="control-label">Nombre</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="current_rol.name" placeholder="Name">
+        </div>
+    </div>
+
+    <div class="col-md-12">
+        <div class="from-group">
+            <label for="description" class="control-label">Descripción</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="current_rol.description" placeholder="description">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-md-12">
+        <div class="from-group">
+            <button type="submit" (click)="addRol();" class="btn btn-success">Submit</button>
+        </div>
+    </div>
+</div>
